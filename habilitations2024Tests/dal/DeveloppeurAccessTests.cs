@@ -172,6 +172,26 @@ namespace habilitations2024.dal.Tests
             EndTransaction();
         }
 
+        [TestMethod()]
+        public void DeveloppeursWithProfilTest()
+        {
+            string nomProfil = "dev-front";
+            int nombreAttendu = 4;
+
+            List<Developpeur> lesDeveloppeurs = developpeurAccess.GetLesDeveloppeurs(nomProfil);
+
+            Assert.AreEqual(nombreAttendu, lesDeveloppeurs.Count, "Erreur: Le nombre de développeurs selon le profil choisi n'est pas égal au nombre attendu");
+        }
+
+        [TestMethod()]
+        public void DeveloppeursWithoutProfilTest()
+        {
+            List<Developpeur> nonFiltrés = developpeurAccess.GetLesDeveloppeurs();
+            List<Developpeur> filtrés = developpeurAccess.GetLesDeveloppeurs(null);
+
+            Assert.AreEqual(nonFiltrés.Count, filtrés.Count, "Erreur: les deux appels n'ont pas le meme nombre de développeurs");
+        }
+
         private static string GetStringSha256Hash(string text)
         {
             Encoding enc = Encoding.UTF8;

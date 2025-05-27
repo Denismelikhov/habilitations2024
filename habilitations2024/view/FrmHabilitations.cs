@@ -69,7 +69,18 @@ namespace habilitations2024.view
         /// </summary>
         private void RemplirListeDeveloppeurs()
         {
-            List<Developpeur> lesDeveloppeurs = controller.GetLesDeveloppeurs();
+            string nomProfilFiltre = (cboFiltrerProfil.SelectedItem as Profil)?.Nom ?? "";
+
+            List<Developpeur> lesDeveloppeurs;
+
+            if (string.IsNullOrEmpty(nomProfilFiltre))
+            {
+                lesDeveloppeurs = controller.GetLesDeveloppeurs();
+            }
+            else
+            {
+                lesDeveloppeurs = controller.GetLesDeveloppeurs(nomProfilFiltre);
+            }
             bdgDeveloppeurs.DataSource = lesDeveloppeurs;
             dgvDeveloppeurs.DataSource = bdgDeveloppeurs;
             dgvDeveloppeurs.Columns["iddeveloppeur"].Visible = false;
@@ -85,6 +96,18 @@ namespace habilitations2024.view
             List<Profil> lesProfils = controller.GetLesProfils();
             bdgProfils.DataSource = lesProfils;
             cboProfil.DataSource = bdgProfils;
+            cboProfil.DisplayMember = "Nom";
+            cboProfil.ValueMember = "Idprofil";
+
+            List<Profil> profilsVide = new List<Profil>();
+            profilsVide.Add(new Profil(0, ""));
+            profilsVide.AddRange(lesProfils);
+
+            cboFiltrerProfil.DataSource = profilsVide;
+            cboFiltrerProfil.DisplayMember = "Nom";
+            cboFiltrerProfil.ValueMember = "Idprofil";
+
+            cboFiltrerProfil.SelectedIndex = 0;
         }
 
         /// <summary>
@@ -318,6 +341,11 @@ namespace habilitations2024.view
                 controller.DelProfil(profil);
                 RemplirListeProfils();
             }
+        }
+
+        private void cboFiltrerProfil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            RemplirListeDeveloppeurs();
         }
     }
 }

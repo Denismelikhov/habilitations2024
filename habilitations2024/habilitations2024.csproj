@@ -142,6 +142,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\FrmAuthentification.resx">
+      <DependentUpon>FrmAuthentification.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\FrmHabilitations.resx">
       <DependentUpon>FrmHabilitations.cs</DependentUpon>
     </EmbeddedResource>

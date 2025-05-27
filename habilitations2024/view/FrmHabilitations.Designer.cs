@@ -48,14 +48,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.grbDeveloppeur = new System.Windows.Forms.GroupBox();
+            this.cboFiltrerProfil = new System.Windows.Forms.ComboBox();
+            this.btnAddProfil = new System.Windows.Forms.Button();
+            this.btnDelProfil = new System.Windows.Forms.Button();
+            this.txtProfil = new System.Windows.Forms.TextBox();
             this.btnDemandeChangePwd = new System.Windows.Forms.Button();
             this.btnDemandeSupprDev = new System.Windows.Forms.Button();
             this.btnDemandeModifDev = new System.Windows.Forms.Button();
             this.grbLesDeveloppeurs = new System.Windows.Forms.GroupBox();
             this.dgvDeveloppeurs = new System.Windows.Forms.DataGridView();
-            this.txtProfil = new System.Windows.Forms.TextBox();
-            this.btnDelProfil = new System.Windows.Forms.Button();
-            this.btnAddProfil = new System.Windows.Forms.Button();
             this.grbPwd.SuspendLayout();
             this.grbDeveloppeur.SuspendLayout();
             this.grbLesDeveloppeurs.SuspendLayout();
@@ -65,17 +66,19 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(308, 22);
+            this.label7.Location = new System.Drawing.Point(565, 41);
+            this.label7.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
+            this.label7.Size = new System.Drawing.Size(72, 25);
             this.label7.TabIndex = 5;
             this.label7.Text = "encore";
             // 
             // btnAnnulPwd
             // 
-            this.btnAnnulPwd.Location = new System.Drawing.Point(87, 45);
+            this.btnAnnulPwd.Location = new System.Drawing.Point(160, 83);
+            this.btnAnnulPwd.Margin = new System.Windows.Forms.Padding(6);
             this.btnAnnulPwd.Name = "btnAnnulPwd";
-            this.btnAnnulPwd.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnulPwd.Size = new System.Drawing.Size(138, 42);
             this.btnAnnulPwd.TabIndex = 4;
             this.btnAnnulPwd.Text = "annuler";
             this.btnAnnulPwd.UseVisualStyleBackColor = true;
@@ -83,9 +86,10 @@
             // 
             // btnEnregPwd
             // 
-            this.btnEnregPwd.Location = new System.Drawing.Point(6, 45);
+            this.btnEnregPwd.Location = new System.Drawing.Point(11, 83);
+            this.btnEnregPwd.Margin = new System.Windows.Forms.Padding(6);
             this.btnEnregPwd.Name = "btnEnregPwd";
-            this.btnEnregPwd.Size = new System.Drawing.Size(75, 23);
+            this.btnEnregPwd.Size = new System.Drawing.Size(138, 42);
             this.btnEnregPwd.TabIndex = 3;
             this.btnEnregPwd.Text = "Enregistrer";
             this.btnEnregPwd.UseVisualStyleBackColor = true;
@@ -93,19 +97,21 @@
             // 
             // txtPwd2
             // 
-            this.txtPwd2.Location = new System.Drawing.Point(354, 19);
+            this.txtPwd2.Location = new System.Drawing.Point(649, 35);
+            this.txtPwd2.Margin = new System.Windows.Forms.Padding(6);
             this.txtPwd2.MaxLength = 50;
             this.txtPwd2.Name = "txtPwd2";
             this.txtPwd2.PasswordChar = '*';
-            this.txtPwd2.Size = new System.Drawing.Size(245, 20);
+            this.txtPwd2.Size = new System.Drawing.Size(446, 29);
             this.txtPwd2.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 22);
+            this.label6.Location = new System.Drawing.Point(11, 41);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(27, 13);
+            this.label6.Size = new System.Drawing.Size(48, 25);
             this.label6.TabIndex = 0;
             this.label6.Text = "pwd";
             // 
@@ -117,27 +123,31 @@
             this.grbPwd.Controls.Add(this.txtPwd2);
             this.grbPwd.Controls.Add(this.txtPwd1);
             this.grbPwd.Controls.Add(this.label6);
-            this.grbPwd.Location = new System.Drawing.Point(11, 415);
+            this.grbPwd.Location = new System.Drawing.Point(20, 766);
+            this.grbPwd.Margin = new System.Windows.Forms.Padding(6);
             this.grbPwd.Name = "grbPwd";
-            this.grbPwd.Size = new System.Drawing.Size(605, 77);
+            this.grbPwd.Padding = new System.Windows.Forms.Padding(6);
+            this.grbPwd.Size = new System.Drawing.Size(1109, 142);
             this.grbPwd.TabIndex = 6;
             this.grbPwd.TabStop = false;
             this.grbPwd.Text = "changer le mot de passe";
             // 
             // txtPwd1
             // 
-            this.txtPwd1.Location = new System.Drawing.Point(54, 19);
+            this.txtPwd1.Location = new System.Drawing.Point(99, 35);
+            this.txtPwd1.Margin = new System.Windows.Forms.Padding(6);
             this.txtPwd1.MaxLength = 50;
             this.txtPwd1.Name = "txtPwd1";
             this.txtPwd1.PasswordChar = '*';
-            this.txtPwd1.Size = new System.Drawing.Size(245, 20);
+            this.txtPwd1.Size = new System.Drawing.Size(446, 29);
             this.txtPwd1.TabIndex = 1;
             // 
             // btnAnnulDev
             // 
-            this.btnAnnulDev.Location = new System.Drawing.Point(87, 98);
+            this.btnAnnulDev.Location = new System.Drawing.Point(160, 181);
+            this.btnAnnulDev.Margin = new System.Windows.Forms.Padding(6);
             this.btnAnnulDev.Name = "btnAnnulDev";
-            this.btnAnnulDev.Size = new System.Drawing.Size(75, 23);
+            this.btnAnnulDev.Size = new System.Drawing.Size(138, 42);
             this.btnAnnulDev.TabIndex = 10;
             this.btnAnnulDev.Text = "annuler";
             this.btnAnnulDev.UseVisualStyleBackColor = true;
@@ -145,9 +155,10 @@
             // 
             // btnEnregDev
             // 
-            this.btnEnregDev.Location = new System.Drawing.Point(6, 98);
+            this.btnEnregDev.Location = new System.Drawing.Point(11, 181);
+            this.btnEnregDev.Margin = new System.Windows.Forms.Padding(6);
             this.btnEnregDev.Name = "btnEnregDev";
-            this.btnEnregDev.Size = new System.Drawing.Size(75, 23);
+            this.btnEnregDev.Size = new System.Drawing.Size(138, 42);
             this.btnEnregDev.TabIndex = 9;
             this.btnEnregDev.Text = "enregistrer";
             this.btnEnregDev.UseVisualStyleBackColor = true;
@@ -156,90 +167,101 @@
             // cboProfil
             // 
             this.cboProfil.FormattingEnabled = true;
-            this.cboProfil.Location = new System.Drawing.Point(354, 71);
+            this.cboProfil.Location = new System.Drawing.Point(649, 131);
+            this.cboProfil.Margin = new System.Windows.Forms.Padding(6);
             this.cboProfil.Name = "cboProfil";
-            this.cboProfil.Size = new System.Drawing.Size(161, 21);
+            this.cboProfil.Size = new System.Drawing.Size(292, 32);
             this.cboProfil.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(308, 74);
+            this.label5.Location = new System.Drawing.Point(565, 137);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 13);
+            this.label5.Size = new System.Drawing.Size(53, 25);
             this.label5.TabIndex = 8;
             this.label5.Text = "profil";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(308, 22);
+            this.label4.Location = new System.Drawing.Point(565, 41);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(25, 13);
+            this.label4.Size = new System.Drawing.Size(47, 25);
             this.label4.TabIndex = 7;
             this.label4.Text = "mail";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(308, 48);
+            this.label3.Location = new System.Drawing.Point(565, 89);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(18, 13);
+            this.label3.Size = new System.Drawing.Size(32, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "tel";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 48);
+            this.label2.Location = new System.Drawing.Point(11, 89);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.Size = new System.Drawing.Size(78, 25);
             this.label2.TabIndex = 5;
             this.label2.Text = "prenom";
             // 
             // txtMail
             // 
-            this.txtMail.Location = new System.Drawing.Point(354, 19);
+            this.txtMail.Location = new System.Drawing.Point(649, 35);
+            this.txtMail.Margin = new System.Windows.Forms.Padding(6);
             this.txtMail.MaxLength = 50;
             this.txtMail.Name = "txtMail";
-            this.txtMail.Size = new System.Drawing.Size(245, 20);
+            this.txtMail.Size = new System.Drawing.Size(446, 29);
             this.txtMail.TabIndex = 6;
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(354, 45);
+            this.txtTel.Location = new System.Drawing.Point(649, 83);
+            this.txtTel.Margin = new System.Windows.Forms.Padding(6);
             this.txtTel.MaxLength = 15;
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(161, 20);
+            this.txtTel.Size = new System.Drawing.Size(292, 29);
             this.txtTel.TabIndex = 7;
             // 
             // txtPrenom
             // 
-            this.txtPrenom.Location = new System.Drawing.Point(54, 45);
+            this.txtPrenom.Location = new System.Drawing.Point(99, 83);
+            this.txtPrenom.Margin = new System.Windows.Forms.Padding(6);
             this.txtPrenom.MaxLength = 20;
             this.txtPrenom.Name = "txtPrenom";
-            this.txtPrenom.Size = new System.Drawing.Size(245, 20);
+            this.txtPrenom.Size = new System.Drawing.Size(446, 29);
             this.txtPrenom.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Location = new System.Drawing.Point(11, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.Size = new System.Drawing.Size(50, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "nom";
             // 
             // txtNom
             // 
-            this.txtNom.Location = new System.Drawing.Point(54, 19);
+            this.txtNom.Location = new System.Drawing.Point(99, 35);
+            this.txtNom.Margin = new System.Windows.Forms.Padding(6);
             this.txtNom.MaxLength = 20;
             this.txtNom.Name = "txtNom";
-            this.txtNom.Size = new System.Drawing.Size(245, 20);
+            this.txtNom.Size = new System.Drawing.Size(446, 29);
             this.txtNom.TabIndex = 3;
             // 
             // grbDeveloppeur
             // 
+            this.grbDeveloppeur.Controls.Add(this.cboFiltrerProfil);
             this.grbDeveloppeur.Controls.Add(this.btnAddProfil);
             this.grbDeveloppeur.Controls.Add(this.btnDelProfil);
             this.grbDeveloppeur.Controls.Add(this.txtProfil);
@@ -255,18 +277,59 @@
             this.grbDeveloppeur.Controls.Add(this.txtPrenom);
             this.grbDeveloppeur.Controls.Add(this.label1);
             this.grbDeveloppeur.Controls.Add(this.txtNom);
-            this.grbDeveloppeur.Location = new System.Drawing.Point(11, 280);
+            this.grbDeveloppeur.Location = new System.Drawing.Point(20, 517);
+            this.grbDeveloppeur.Margin = new System.Windows.Forms.Padding(6);
             this.grbDeveloppeur.Name = "grbDeveloppeur";
-            this.grbDeveloppeur.Size = new System.Drawing.Size(605, 129);
+            this.grbDeveloppeur.Padding = new System.Windows.Forms.Padding(6);
+            this.grbDeveloppeur.Size = new System.Drawing.Size(1109, 238);
             this.grbDeveloppeur.TabIndex = 5;
             this.grbDeveloppeur.TabStop = false;
             this.grbDeveloppeur.Text = "ajouter un développeur";
             // 
+            // cboFiltrerProfil
+            // 
+            this.cboFiltrerProfil.Location = new System.Drawing.Point(99, 131);
+            this.cboFiltrerProfil.Name = "cboFiltrerProfil";
+            this.cboFiltrerProfil.Size = new System.Drawing.Size(446, 32);
+            this.cboFiltrerProfil.TabIndex = 0;
+            this.cboFiltrerProfil.SelectedIndexChanged += new System.EventHandler(this.cboFiltrerProfil_SelectedIndexChanged);
+            // 
+            // btnAddProfil
+            // 
+            this.btnAddProfil.Location = new System.Drawing.Point(955, 174);
+            this.btnAddProfil.Margin = new System.Windows.Forms.Padding(6);
+            this.btnAddProfil.Name = "btnAddProfil";
+            this.btnAddProfil.Size = new System.Drawing.Size(143, 42);
+            this.btnAddProfil.TabIndex = 13;
+            this.btnAddProfil.Text = "ajouter";
+            this.btnAddProfil.UseVisualStyleBackColor = true;
+            this.btnAddProfil.Click += new System.EventHandler(this.BtnAddProfil_Click);
+            // 
+            // btnDelProfil
+            // 
+            this.btnDelProfil.Location = new System.Drawing.Point(955, 127);
+            this.btnDelProfil.Margin = new System.Windows.Forms.Padding(6);
+            this.btnDelProfil.Name = "btnDelProfil";
+            this.btnDelProfil.Size = new System.Drawing.Size(143, 42);
+            this.btnDelProfil.TabIndex = 12;
+            this.btnDelProfil.Text = "supprimer";
+            this.btnDelProfil.UseVisualStyleBackColor = true;
+            this.btnDelProfil.Click += new System.EventHandler(this.BtnDelProfil_Click);
+            // 
+            // txtProfil
+            // 
+            this.txtProfil.Location = new System.Drawing.Point(651, 177);
+            this.txtProfil.Margin = new System.Windows.Forms.Padding(6);
+            this.txtProfil.Name = "txtProfil";
+            this.txtProfil.Size = new System.Drawing.Size(288, 29);
+            this.txtProfil.TabIndex = 11;
+            // 
             // btnDemandeChangePwd
             // 
-            this.btnDemandeChangePwd.Location = new System.Drawing.Point(168, 231);
+            this.btnDemandeChangePwd.Location = new System.Drawing.Point(308, 426);
+            this.btnDemandeChangePwd.Margin = new System.Windows.Forms.Padding(6);
             this.btnDemandeChangePwd.Name = "btnDemandeChangePwd";
-            this.btnDemandeChangePwd.Size = new System.Drawing.Size(85, 23);
+            this.btnDemandeChangePwd.Size = new System.Drawing.Size(156, 42);
             this.btnDemandeChangePwd.TabIndex = 3;
             this.btnDemandeChangePwd.Text = "changer pwd";
             this.btnDemandeChangePwd.UseVisualStyleBackColor = true;
@@ -274,9 +337,10 @@
             // 
             // btnDemandeSupprDev
             // 
-            this.btnDemandeSupprDev.Location = new System.Drawing.Point(87, 231);
+            this.btnDemandeSupprDev.Location = new System.Drawing.Point(160, 426);
+            this.btnDemandeSupprDev.Margin = new System.Windows.Forms.Padding(6);
             this.btnDemandeSupprDev.Name = "btnDemandeSupprDev";
-            this.btnDemandeSupprDev.Size = new System.Drawing.Size(75, 23);
+            this.btnDemandeSupprDev.Size = new System.Drawing.Size(138, 42);
             this.btnDemandeSupprDev.TabIndex = 2;
             this.btnDemandeSupprDev.Text = "supprimer";
             this.btnDemandeSupprDev.UseVisualStyleBackColor = true;
@@ -284,9 +348,10 @@
             // 
             // btnDemandeModifDev
             // 
-            this.btnDemandeModifDev.Location = new System.Drawing.Point(6, 231);
+            this.btnDemandeModifDev.Location = new System.Drawing.Point(11, 426);
+            this.btnDemandeModifDev.Margin = new System.Windows.Forms.Padding(6);
             this.btnDemandeModifDev.Name = "btnDemandeModifDev";
-            this.btnDemandeModifDev.Size = new System.Drawing.Size(75, 23);
+            this.btnDemandeModifDev.Size = new System.Drawing.Size(138, 42);
             this.btnDemandeModifDev.TabIndex = 1;
             this.btnDemandeModifDev.Text = "modifier";
             this.btnDemandeModifDev.UseVisualStyleBackColor = true;
@@ -298,9 +363,11 @@
             this.grbLesDeveloppeurs.Controls.Add(this.btnDemandeSupprDev);
             this.grbLesDeveloppeurs.Controls.Add(this.btnDemandeModifDev);
             this.grbLesDeveloppeurs.Controls.Add(this.dgvDeveloppeurs);
-            this.grbLesDeveloppeurs.Location = new System.Drawing.Point(11, 10);
+            this.grbLesDeveloppeurs.Location = new System.Drawing.Point(20, 18);
+            this.grbLesDeveloppeurs.Margin = new System.Windows.Forms.Padding(6);
             this.grbLesDeveloppeurs.Name = "grbLesDeveloppeurs";
-            this.grbLesDeveloppeurs.Size = new System.Drawing.Size(605, 264);
+            this.grbLesDeveloppeurs.Padding = new System.Windows.Forms.Padding(6);
+            this.grbLesDeveloppeurs.Size = new System.Drawing.Size(1109, 487);
             this.grbLesDeveloppeurs.TabIndex = 4;
             this.grbLesDeveloppeurs.TabStop = false;
             this.grbLesDeveloppeurs.Text = "les développeurs";
@@ -311,51 +378,26 @@
             this.dgvDeveloppeurs.AllowUserToDeleteRows = false;
             this.dgvDeveloppeurs.AllowUserToResizeRows = false;
             this.dgvDeveloppeurs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDeveloppeurs.Location = new System.Drawing.Point(6, 19);
+            this.dgvDeveloppeurs.Location = new System.Drawing.Point(11, 35);
+            this.dgvDeveloppeurs.Margin = new System.Windows.Forms.Padding(6);
             this.dgvDeveloppeurs.MultiSelect = false;
             this.dgvDeveloppeurs.Name = "dgvDeveloppeurs";
             this.dgvDeveloppeurs.ReadOnly = true;
             this.dgvDeveloppeurs.RowHeadersVisible = false;
             this.dgvDeveloppeurs.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvDeveloppeurs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDeveloppeurs.Size = new System.Drawing.Size(581, 206);
+            this.dgvDeveloppeurs.Size = new System.Drawing.Size(1065, 380);
             this.dgvDeveloppeurs.TabIndex = 0;
-            // 
-            // txtProfil
-            // 
-            this.txtProfil.Location = new System.Drawing.Point(355, 96);
-            this.txtProfil.Name = "txtProfil";
-            this.txtProfil.Size = new System.Drawing.Size(159, 20);
-            this.txtProfil.TabIndex = 11;
-            // 
-            // btnDelProfil
-            // 
-            this.btnDelProfil.Location = new System.Drawing.Point(521, 69);
-            this.btnDelProfil.Name = "btnDelProfil";
-            this.btnDelProfil.Size = new System.Drawing.Size(78, 23);
-            this.btnDelProfil.TabIndex = 12;
-            this.btnDelProfil.Text = "supprimer";
-            this.btnDelProfil.UseVisualStyleBackColor = true;
-            this.btnDelProfil.Click += new System.EventHandler(this.BtnDelProfil_Click);
-            // 
-            // btnAddProfil
-            // 
-            this.btnAddProfil.Location = new System.Drawing.Point(521, 94);
-            this.btnAddProfil.Name = "btnAddProfil";
-            this.btnAddProfil.Size = new System.Drawing.Size(78, 23);
-            this.btnAddProfil.TabIndex = 13;
-            this.btnAddProfil.Text = "ajouter";
-            this.btnAddProfil.UseVisualStyleBackColor = true;
-            this.btnAddProfil.Click += new System.EventHandler(this.BtnAddProfil_Click);
             // 
             // FrmHabilitations
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(627, 502);
+            this.ClientSize = new System.Drawing.Size(1150, 927);
             this.Controls.Add(this.grbPwd);
             this.Controls.Add(this.grbDeveloppeur);
             this.Controls.Add(this.grbLesDeveloppeurs);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FrmHabilitations";
             this.Text = "Habilitations";
             this.grbPwd.ResumeLayout(false);
@@ -398,6 +440,7 @@
         private System.Windows.Forms.Button btnAddProfil;
         private System.Windows.Forms.Button btnDelProfil;
         private System.Windows.Forms.TextBox txtProfil;
+        private System.Windows.Forms.ComboBox cboFiltrerProfil;
     }
 }
 
